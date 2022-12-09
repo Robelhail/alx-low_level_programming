@@ -11,7 +11,7 @@ char a;
 
 for (a = 'a'; a <= 'z'; a++)
 {
-if (a != 'e' && a != 'q')
+if (a != '1' && a != '0')
 putchar(a);
 }
 putchar('\n');
