@@ -8,12 +8,8 @@
 int main(void)
 {
 char num;
-num = 0;
-while (num < 10)
-{
+for (num = 0; num <= 10; num++)
 putchar(num);
-num++;
-}
 putchar('\n');
 return (0);
 }
