@@ -3,7 +3,7 @@
 #include <time.h>
 
 /**
-* main - program that generates random valid
+* main - program that generates random valid passwords for the program
 * passwords for the program 101-crackme
 *
 * Return: Always 0 (Success)
@@ -25,7 +25,7 @@ sum += (pass[r] + '0');
 putchar(pass[r] + '0');
 if ((2772 - sum) - '0' < 78)
 {
-n = 2772 - sum - '0';
+y = 2772 - sum - '0';
 sum += y;
 putchar(y + '0');
 break;
