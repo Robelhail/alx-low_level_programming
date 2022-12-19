@@ -18,3 +18,9 @@ s--;
 for (o = lnz; o > 0; o--)
 {
 _putchar(*s);
+s--;
+}
+
+_putchar('\n');
+}
+
