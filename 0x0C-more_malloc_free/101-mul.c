@@ -40,6 +40,9 @@ i++;
 return (i);
 }
 
+/**
+* errors -it handles errors for main
+*/
 
 void errors(void)
 {
