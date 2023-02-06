@@ -8,10 +8,9 @@
 * Return: If the function fails - -1.
 * Otherwise - 1.
 */
-
 int create_file(const char *filename, char *text_content)
 {
-int ti, r, len = 0;
+int fd, w, len = 0;
 
 if (filename == NULL)
 return (-1);
@@ -22,13 +21,13 @@ for (len = 0; text_content[len];)
 len++;
 }
 
-ti = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
-r = write(fd, text_content, len);
+fd = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
+w = write(fd, text_content, len);
 
-if (ti == -1 || r == -1)
+if (fd == -1 || w == -1)
 return (-1);
 
-close(ti);
+close(fd);
 
 return (1);
 }
